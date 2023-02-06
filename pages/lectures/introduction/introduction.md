@@ -92,11 +92,10 @@ $$
 
 Finally, use the derivative to update the model parameters:
 
-$$
-w_{i, j}^{t+1} = w_{i,j}^t + \eta(y_j - \hat{y}_j)x_i
-$$
 
-In the above equation, the weight of the connection between neuron $i^{th}$ input neuron and $j^{th}$ output neuron (i.e. $w_{i, j}$) is updated after feeding one training instance at a time $t$. $\hat{y}_j$ is the predicted output of $j^{th}$ output neuron for the corresponding input instance. $\eta$ is the learning rate is a parameter used to control the intensity of changes in weights in the network to adjust them during the training process which should be tuned with trial and testing to find the best weights to reduce the error.
+$$ w_{i, j}^{t+1} = w_{i,j}^t + \eta(y_j - \hat{y_j})x_i $$
+
+In the above equation, the weight of the connection between neuron $i^{th}$ input neuron and $j^{th}$ output neuron (i.e. $w_{i, j}$) is updated after feeding one training instance at a time $t$. $\hat{y_j}$ is the predicted output of $j^{th}$ output neuron for the corresponding input instance. $\eta$ is the learning rate is a parameter used to control the intensity of changes in weights in the network to adjust them during the training process which should be tuned with trial and testing to find the best weights to reduce the error.
 
 Perceptron models have been completely replaced by deeper neural networks with more complex architectures due to their limited capability. Perceptron models are single-layer neural networks that can only classify linearly separable data. This means that they are not capable of solving more complex problems such as image recognition or natural language processing.
 
