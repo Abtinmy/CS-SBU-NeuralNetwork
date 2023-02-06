@@ -728,7 +728,7 @@ $\begin{bmatrix} a & b & c \\
 d & e & f \end{bmatrix} \;\times\; \begin{bmatrix} m & n \\ p & q \\ r & s \end{bmatrix} = \begin{bmatrix} (am+bp+cr) & (an+bq+cs) \\
 (dm+ep+fr) & (dn+eq+fs) \end{bmatrix}$</div></div>
 
-![](intro_to_pytorch/Matrix_multiplication_diagram_2.svg)
+![](intro_to_pytorch/Matrix_multiplication_diagram_2.svg.png)
 
 <div style="clear:both">Image source: <a href='https://commons.wikimedia.org/wiki/File:Matrix_multiplication_diagram_2.svg'>https://commons.wikimedia.org/wiki/File:Matrix_multiplication_diagram_2.svg</a></div>
 
