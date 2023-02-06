@@ -1,14 +1,3 @@
----
-layout: default
-title: Introduction To Neural Network
-nav_order: 1
-parent: Lectures
-has_children: false
-permalink: /lectures/introduction/introduction
----
-
-
-
 ## A Brief History
 
 Back in 1943, Warren McCulloch and Walter Pitts published a paper that demonstrates the idea of simulating neurons and their functionality in animal brains using electrical circuits and mathematical equations. They proposed that neurons could be connected in a network and then could be used to solve complex problems.
