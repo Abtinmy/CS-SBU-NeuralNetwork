@@ -4,7 +4,7 @@ title: Intro to Pytorch
 nav_order: 1
 has_children: false
 parent: Pytorch
-grand_children: Lectures
+grand_parent: Lectures
 permalink: /lectures/pytorch/intro_to_pytorch
 ---
 
