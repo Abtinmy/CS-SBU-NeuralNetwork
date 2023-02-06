@@ -406,7 +406,8 @@ import numpy as np
 ## Indexing and slicing
 Extracting specific values from a tensor works just the same as with NumPy arrays<br>
 
-![](http://www.scipy-lectures.org/_images/numpy_indexing.png)
+![](intro_to_pytorch/numpy_indexing.png)
+
 Image source: http://www.scipy-lectures.org/_images/numpy_indexing.png
 
 
@@ -727,7 +728,8 @@ $\begin{bmatrix} a & b & c \\
 d & e & f \end{bmatrix} \;\times\; \begin{bmatrix} m & n \\ p & q \\ r & s \end{bmatrix} = \begin{bmatrix} (am+bp+cr) & (an+bq+cs) \\
 (dm+ep+fr) & (dn+eq+fs) \end{bmatrix}$</div></div>
 
-![](https://upload.wikimedia.org/wikipedia/commons/e/eb/Matrix_multiplication_diagram_2.svg)
+![](intro_to_pytorch/Matrix_multiplication_diagram_2.svg)
+
 <div style="clear:both">Image source: <a href='https://commons.wikimedia.org/wiki/File:Matrix_multiplication_diagram_2.svg'>https://commons.wikimedia.org/wiki/File:Matrix_multiplication_diagram_2.svg</a></div>
 
 Matrix multiplication can be computed using <a href='https://pytorch.org/docs/stable/torch.html#torch.mm'><strong><tt>torch.mm(a,b)</tt></strong></a> or `a.mm(b)` or `a @ b`
