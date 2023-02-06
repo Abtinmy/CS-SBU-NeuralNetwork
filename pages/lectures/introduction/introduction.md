@@ -49,30 +49,24 @@ A perceptron consists of several inputs, each with a corresponding weight, and a
 
 ![](images/perceptron.jpg)
 
-$$
-\begin{equation}
-    \begin{split}
-        y = step(z)\\
-        z = w_1x_1 + w_2x_2 + ... + w_nx_n = x^Tw
-    \end{split}
-\end{equation}
-$$
+$$ y = step(z) $$
 
-This activation process is performed by applying a step function to the weighted sum of inputs and outputs the results. Usually, \textit{Heaviside step function} and sign function are used as step functions for this model.
+$$ z = w_1x_1 + w_2x_2 + ... + w_nx_n = x^Tw $$
+
+This activation process is performed by applying a step function to the weighted sum of inputs and outputs the results. Usually, *Heaviside step function* and sign function are used as step functions for this model.
 
 $$
-\begin{align}
     heaviside(z) = \begin{cases} 
                     0 & z < 0 \\
                     1 & z\ge 0 
                     \end{cases}
-&
+$$
+$$
     sgn(z) = \begin{cases} 
                     -1 & z < 0 \\
                     0 & z = 0 \\
                     1 & z > 0    
               \end{cases}
-\end{align}
 $$
 
 The perceptron model is very similar to how a single neuron functions in the human brain. In both cases, the neurons receive signals from other neurons, which are weighed and then used to activate or inhibit certain reactions. The difference lies in how the weights are determined. In the perceptron model, the weights are predetermined and adjusted when the algorithm is trained, while in the human brain, the weights are determined by repeated exposure to various stimuli. 
@@ -99,9 +93,7 @@ $$
 Finally, use the derivative to update the model parameters:
 
 $$
-\begin{equation}
-    w_{i, j}^{t+1} = w_{i,j}^t + \eta(y_j - \hat{y}_j)x_i
-\end{equation}
+w_{i, j}^{t+1} = w_{i,j}^t + \eta(y_j - \hat{y}_j)x_i
 $$
 
 In the above equation, the weight of the connection between neuron $i^{th}$ input neuron and $j^{th}$ output neuron (i.e. $w_{i, j}$) is updated after feeding one training instance at a time $t$. $\hat{y}_j$ is the predicted output of $j^{th}$ output neuron for the corresponding input instance. $\eta$ is the learning rate is a parameter used to control the intensity of changes in weights in the network to adjust them during the training process which should be tuned with trial and testing to find the best weights to reduce the error.
