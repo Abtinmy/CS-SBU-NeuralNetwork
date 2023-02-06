@@ -5,7 +5,7 @@ nav_order: 1
 has_children: false
 parent: Pytorch
 grand_children: Lectures
-permalink: /lectures/pytorch/pytorch/intro_to_pytorch
+permalink: /lectures/pytorch/intro_to_pytorch
 ---
 
 
