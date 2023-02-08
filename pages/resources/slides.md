@@ -15,5 +15,5 @@ permalink: /resources/slides
 - [Recurrent Neural Networks](https://github.com/Abtinmy/CS-SBU-NeuralNetwork/blob/main/slides/RNN.pdf)
 - [Image Captioning](https://github.com/Abtinmy/CS-SBU-NeuralNetwork/blob/main/slides/Image%20captioning.pdf)
 - [Autoencoders](https://github.com/Abtinmy/CS-SBU-NeuralNetwork/blob/main/slides/Autoencoders.pdf)
-- [Varitional Autoencoders](https://github.com/Abtinmy/CS-SBU-NeuralNetwork/blob/main/slides/VAE.pdf)
+- [Variational Autoencoders](https://github.com/Abtinmy/CS-SBU-NeuralNetwork/blob/main/slides/VAE.pdf)
 - [Deep Reinforcement Learning](https://github.com/Abtinmy/CS-SBU-NeuralNetwork/blob/main/slides/Deep%20RL.pdf)
