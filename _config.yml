@@ -14,6 +14,8 @@ search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
+  Repo on GitHub:
+    - 'https://github.com/Abtinmy/CS-SBU-NeuralNetwork'
 footer_content: Neural Network - Computer Science Faculty of Shahid Beheshti University. Winter 2023 - Contact us at abtinmahyar@gmail.com
 
 # Collections for website data
