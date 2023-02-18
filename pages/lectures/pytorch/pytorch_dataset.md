@@ -1,6 +1,12 @@
-```python
-
-```
+---
+layout: default
+title: Pytorch Dataset
+nav_order: 1
+has_children: false
+parent: Pytorch Tutorial
+grand_parent: Lectures
+permalink: /lectures/pytorch/pytorch_dataset
+---
 
 some part of this notebook are copied from Jose Marcial Portilla works.
 
