@@ -25,7 +25,9 @@ Describe the differences between the Cross-Entropy vs Mean Squared Error. Which 
 
 **Exercise 3**
 
-Why do we usually consider cost function as a negative of log-likelihood? **Exercise 4**
+Why do we usually consider cost function as a negative of log-likelihood?
+
+**Exercise 4**
 
 Learning in a Neural network is done by updating the weights. “Backward propagation of errors” known as backpropagation is the common method to do the updating efficiently. Now consider the following neural network with Sigmoid as neurons’ activation function and “Mean Squared Error” as the cost function.
 
