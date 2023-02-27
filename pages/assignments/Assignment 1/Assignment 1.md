@@ -15,6 +15,8 @@ permalink: /assignments/Assignment 1/Assignment 1
 
 **Due date: March 12**
 
+** You are required to write a detailed report for both Theory and implementation tasks.**
+
 **Exercise 1**
 
 Why is it generally preferable to use a Logistic Regression classifier rather than a classical Perceptron (i.e., a single layer of threshold logic units trained using the Perceptron training algorithm)? How can you tweak a Perceptron to make it equivalent to a Logistic Regression classifier?
