@@ -36,7 +36,8 @@ Learning in a Neural network is done by updating the weights. “Backward propag
 
 ![](Aspose.Words.9fea8443-b32d-4f5c-91d3-552d381d818e.001.jpeg)
 
-**W1 = .15 i1->h1 W2 = .20 i1->h2 W3 = .25 i2->h1 W4 = .30 i2->h2 W5 = .40 h1->o1 W6 = .45 h1->o2 W7 = .50 h2->o1 W8 = .55 h2->o2**
+**W1 = .15 i1->h1       W2 = .20 i1->h2         W3 = .25 i2->h1      W4 = .30 i2->h2**
+**W5 = .40 h1->o1       W6 = .45 h1->o2         W7 = .50 h2->o1      W8 = .55 h2->o2**
 
 **Exercise 5**
 
