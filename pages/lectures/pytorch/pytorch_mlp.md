@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Pytorch Dataset
+title: Pytorch MLP
 nav_order: 1
 has_children: false
 parent: Pytorch Tutorial
