@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Pytorch MLP
-nav_order: 1
+nav_order: 3
 has_children: false
 parent: Pytorch Tutorial
 grand_parent: Lectures
-permalink: /lectures/pytorch/pytorch_mlp
+permalink: /lectures/pytorch/Pytorch_mlp
 ---
 
 # tensor
@@ -22,7 +22,7 @@ print(tensor1d)
 ```
 
     tensor([   1,   -1,   15, 1000])
-
+    
 
 
 ```
@@ -37,7 +37,7 @@ print(tensor2d)
             [  5.6000,  88.0000,  10.0000],
             [  2.3000,  36.0000, -10.0000],
             [  2.0000,  12.0000,   0.2000]])
-
+    
 
 
 ```
@@ -62,7 +62,7 @@ print(tensor3d)
              [  0.6000,  88.0000,   1.0000],
              [  0.3000,   3.6000, -10.0000],
              [  2.1000,   1.2000,   4.2000]]])
-
+    
 
 
 ```
@@ -119,7 +119,7 @@ print(zeros1d)
 ```
 
     tensor([0.])
-
+    
 
 
 ```
@@ -128,7 +128,7 @@ print(zeros1d)
 ```
 
     tensor([0., 0., 0., 0., 0.])
-
+    
 
 
 ```
@@ -138,7 +138,7 @@ print(zeros2d)
 
     tensor([[0., 0., 0.],
             [0., 0., 0.]])
-
+    
 
 
 ```
@@ -147,7 +147,7 @@ print(zeros5d.shape)
 ```
 
     torch.Size([2, 3, 8, 6, 5])
-
+    
 
 
 ```
@@ -155,7 +155,7 @@ print(zeros5d.numel())
 ```
 
     1440
-
+    
 
 
 ```
@@ -165,7 +165,7 @@ print(zeros2d)
 
     tensor([[0., 0.],
             [0., 0.]], dtype=torch.float64)
-
+    
 
 
 ```
@@ -174,7 +174,7 @@ print(ones1d)
 ```
 
     tensor([1., 1., 1., 1.])
-
+    
 
 
 ```
@@ -186,7 +186,7 @@ print(ones2d)
             [1., 1., 1., 1., 1., 1., 1., 1.],
             [1., 1., 1., 1., 1., 1., 1., 1.],
             [1., 1., 1., 1., 1., 1., 1., 1.]])
-
+    
 
 
 ```
@@ -196,7 +196,7 @@ print(ones3d)
 
     tensor([[[1],
              [1]]], dtype=torch.int16)
-
+    
 
 
 ```
@@ -207,7 +207,7 @@ print(full2d)
     tensor([[5, 5, 5, 5],
             [5, 5, 5, 5],
             [5, 5, 5, 5]])
-
+    
 
 
 ```
@@ -220,7 +220,7 @@ print(eye_tensor)
             [0., 0., 1., 0., 0.],
             [0., 0., 0., 1., 0.],
             [0., 0., 0., 0., 1.]])
-
+    
 
 
 ```
@@ -229,7 +229,7 @@ print(arange_tensor)
 ```
 
     tensor([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-
+    
 
 
 ```
@@ -239,7 +239,7 @@ print(arange_tensor)
 
     tensor([1.5000, 1.6000, 1.7000, 1.8000, 1.9000, 2.0000, 2.1000, 2.2000, 2.3000,
             2.4000])
-
+    
 
 
 ```
@@ -259,7 +259,7 @@ print(linspace_tensor)
             0.8182, 0.8283, 0.8384, 0.8485, 0.8586, 0.8687, 0.8788, 0.8889, 0.8990,
             0.9091, 0.9192, 0.9293, 0.9394, 0.9495, 0.9596, 0.9697, 0.9798, 0.9899,
             1.0000])
-
+    
 
 
 ```
@@ -277,7 +277,7 @@ print(c)
             [0.4514, 0.6632]])
     tensor([[1.1390, 1.1959],
             [0.6016, 0.9068]])
-
+    
 
 
 ```
@@ -292,7 +292,7 @@ print(c)
              [0.5521, 0.3160, 0.9857]]])
     tensor([[[3.1750, 2.7402, 3.3859],
              [3.0521, 2.8160, 3.4857]]])
-
+    
 
 out=input+alpha×other
 
@@ -305,7 +305,7 @@ print(c)
 
     tensor([[[1.4250, 0.9902, 1.6359],
              [1.3021, 1.0660, 1.7357]]])
-
+    
 
 
 ```
@@ -315,7 +315,7 @@ print(c)
 
     tensor([[[1.4250, 0.9902, 1.6359],
              [1.3021, 1.0660, 1.7357]]])
-
+    
 
 
 ```
@@ -336,7 +336,7 @@ print(c)
             [81, 48],
             [72,  8],
             [ 9, 56]])
-
+    
 
 
 ```
@@ -358,7 +358,7 @@ print(c)
             [-0.8589, -0.4142,  0.4775,  0.9354],
             [-0.4154, -0.5403,  0.2896, -0.1164],
             [-0.2817, -0.7829,  0.2683, -0.7760]])
-
+    
 
 
 ```
@@ -370,7 +370,7 @@ print(c)
             [-0.8589, -0.4142,  0.4775,  0.9354],
             [-0.4154, -0.5403,  0.2896, -0.1164],
             [-0.2817, -0.7829,  0.2683, -0.7760]])
-
+    
 
 
 ```
@@ -380,7 +380,7 @@ torch.div(a, 0.5)
 ```
 
     tensor([ 2.0433, -1.1218, -0.0541,  0.3179,  0.5792])
-
+    
 
 
 
@@ -411,7 +411,7 @@ print(c)
             [ 2.4012,  6.0676, -6.9959, -2.3761],
             [ 0.3724,  0.5536, -0.5420,  0.5404],
             [ 0.1913, -1.6533,  4.4519, -3.0671]])
-
+    
 
 
 ```
@@ -423,7 +423,7 @@ print(c)
             [ 2.4012,  6.0676, -6.9959, -2.3761],
             [ 0.3724,  0.5536, -0.5420,  0.5404],
             [ 0.1913, -1.6533,  4.4519, -3.0671]])
-
+    
 
 
 ```
@@ -442,7 +442,7 @@ print(b)
             [-1.8456e+00, -1.7272e+00,  1.1230e-01, -3.7817e-01],
             [-6.6258e-01, -9.1275e-01,  4.6796e-01, -1.4285e+00],
             [ 8.4510e-01,  4.6842e-01, -3.0267e-01,  4.4238e-01]])
-
+    
 
 # Linear Regression
 
@@ -557,7 +557,7 @@ plt.ylabel('y_train')
 
 
     
-![png](Pytorch_mlp_files/Pytorch_mlp_46_1.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_46_1.png)
     
 
 
@@ -583,7 +583,7 @@ print(y.shape)
 
     [0.49671415] [-0.1382643]
     (80, 1)
-
+    
 
 ### loss function
 
@@ -603,7 +603,7 @@ print(loss)
 ```
 
     2.7421577700550976
-
+    
 
 ### gradient
 
@@ -626,7 +626,7 @@ print('b_grad: ', b_grad)
 
     a_grad:  -3.044811379650508
     b_grad:  -1.8337537171510832
-
+    
 
 ### update parameters
 
@@ -650,7 +650,7 @@ print('b: ', b)
 
     a:  [0.80119529]
     b:  [0.04511107]
-
+    
 
 ### Do it for 100 epochs
 
@@ -693,7 +693,7 @@ print('Final Error : ',(((a + b * x_train) - y_train)**2).mean())
     Final value of a:  [1.02354094]
     Final value of b:  [1.96896411]
     Final Error :  0.008044657695505126
-
+    
 
 
 ```
@@ -716,7 +716,7 @@ plt.plot(x_val, yhat, 'g')
 
 
     
-![png](Pytorch_mlp_files/Pytorch_mlp_58_1.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_58_1.png)
     
 
 
@@ -816,7 +816,7 @@ print(tensor)
     --------------------------------------------------
     tensor([[7, 4, 6],
             [9, 2, 6]])
-
+    
 
 
 ```
@@ -833,7 +833,7 @@ print(np_array)
     --------------------------------------------------
     [[7 4 6]
      [9 2 6]]
-
+    
 
 
 ```
@@ -875,7 +875,7 @@ print('Initial value of b: ', b)
 
     Initial value of a:  tensor([0.3367])
     Initial value of b:  tensor([0.1288])
-
+    
 
 
 ```
@@ -910,7 +910,7 @@ print('Final value of b: ', b)
 
     Final value of a:  tensor([1.0235])
     Final value of b:  tensor([1.9690])
-
+    
 
 ### pytorch
 
@@ -925,7 +925,7 @@ y.backward()
 
     x:  tensor([0.2345], requires_grad=True)
     y:  tensor([0.0550], grad_fn=<PowBackward0>)
-
+    
 
 
 ```
@@ -963,7 +963,7 @@ print(optimizer)
         nesterov: False
         weight_decay: 0
     )
-
+    
 
 
 ```
@@ -1010,7 +1010,7 @@ print('Initial value of b: ', b)
 
     Initial value of a:  tensor([0.3367], requires_grad=True)
     Initial value of b:  tensor([0.1288], requires_grad=True)
-
+    
 
 
 ```
@@ -1057,7 +1057,7 @@ print('Final value of b: ', b)
 
     Final value of a:  tensor([1.0235], requires_grad=True)
     Final value of b:  tensor([1.9690], requires_grad=True)
-
+    
 
 
 ```
@@ -1074,7 +1074,7 @@ print('Gradient: ', x.grad)
 ```
 
     Gradient:  tensor(3.)
-
+    
 
 
 ```
@@ -1085,7 +1085,7 @@ print('Gradient: ', x.grad)
 ```
 
     Gradient:  tensor(6.)
-
+    
 
 ### pytorch loss function
 
@@ -1099,7 +1099,7 @@ print(output)
 ```
 
     tensor(0.9842, grad_fn=<MseLossBackward0>)
-
+    
 
 
 ```
@@ -1146,7 +1146,7 @@ print('Initial value of b: ', b)
 
     Initial value of a:  tensor([0.3367], requires_grad=True)
     Initial value of b:  tensor([0.1288], requires_grad=True)
-
+    
 
 
 ```
@@ -1193,7 +1193,7 @@ print('Final loss : ',final_error)
     Final value of a:  tensor([1.0235], requires_grad=True)
     Final value of b:  tensor([1.9690], requires_grad=True)
     Final loss :  tensor(0.0080, dtype=torch.float64, grad_fn=<MseLossBackward0>)
-
+    
 
 ### pytorch FC 
 
@@ -1229,7 +1229,7 @@ print(nn_model)
       (output): Linear(in_features=30, out_features=2, bias=True)
       (softmax): Softmax(dim=1)
     )
-
+    
 
 
 ```
@@ -1248,7 +1248,7 @@ print(model)
       (2): Linear(in_features=30, out_features=2, bias=True)
       (3): Softmax(dim=None)
     )
-
+    
 
 
 ```
@@ -1273,7 +1273,7 @@ print(lreg_model)
     LinRegModel(
       (neuron): Linear(in_features=1, out_features=1, bias=True)
     )
-
+    
 
 
 ```
@@ -1368,7 +1368,7 @@ print(lreg_model.state_dict())
 ```
 
     OrderedDict([('neuron.weight', tensor([[1.9690]])), ('neuron.bias', tensor([1.0235]))])
-
+    
 
 # Classification
 
@@ -1466,7 +1466,7 @@ plt.imshow(digits.images[0], cmap='gray')
 
 
     
-![png](Pytorch_mlp_files/Pytorch_mlp_122_1.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_122_1.png)
     
 
 
@@ -1902,7 +1902,7 @@ for i, image in enumerate(digits.images[:100]):
     WARNING:imageio:Lossy conversion from float64 to uint8. Range [0.0, 16.0]. Convert image to uint8 prior to saving to suppress this warning.
     WARNING:imageio:Lossy conversion from float64 to uint8. Range [0.0, 16.0]. Convert image to uint8 prior to saving to suppress this warning.
     WARNING:imageio:Lossy conversion from float64 to uint8. Range [0.0, 16.0]. Convert image to uint8 prior to saving to suppress this warning.
-
+    
 
 
 ```
@@ -2046,7 +2046,7 @@ print(device)
 ```
 
     cuda:0
-
+    
 
 
 ```
@@ -2247,7 +2247,7 @@ for epoch in range(no_epochs):
     epoch:10, batch: 14,  loss: 1.924949049949646
     epoch:10, batch: 15,  loss: 2.1606929302215576
     epoch:10, batch: 16,  loss: 2.0498740673065186
-
+    
 
 
 ```
@@ -2271,7 +2271,7 @@ for epoch in range(no_epochs):
     Successfully built torchviz
     Installing collected packages: torchviz
     Successfully installed torchviz-0.0.2
-
+    
 
 
 ```
@@ -2286,7 +2286,7 @@ make_dot(output, params=dict(net.named_parameters()))
 
 
     
-![svg](pytorch_mlp_files/Pytorch_mlp_141_0.svg)
+![svg](Pytorch_mlp%20_files/Pytorch_mlp%20_141_0.svg)
     
 
 
@@ -2312,7 +2312,7 @@ print(f'Accuracy of the network on the 20 test images: {100 * correct // total} 
 ```
 
     Accuracy of the network on the 20 test images: 70 %
-
+    
 
 
 ```
@@ -2336,121 +2336,121 @@ with torch.no_grad():
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_0.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_0.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_1.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_1.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_2.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_2.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_3.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_3.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_4.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_4.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_5.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_5.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_6.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_6.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_7.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_7.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_8.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_8.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_9.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_9.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_10.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_10.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_11.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_11.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_12.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_12.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_13.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_13.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_14.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_14.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_15.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_15.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_16.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_16.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_17.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_17.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_18.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_18.png)
     
 
 
 
     
-![png](pytorch_mlp_files/Pytorch_mlp_144_19.png)
+![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_19.png)
     
 
 
