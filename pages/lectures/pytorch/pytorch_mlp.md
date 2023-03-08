@@ -5,9 +5,8 @@ nav_order: 3
 has_children: false
 parent: Pytorch Tutorial
 grand_parent: Lectures
-permalink: /lectures/pytorch/Pytorch_mlp
+permalink: /lectures/pytorch/pytorch_mlp
 ---
-
 # tensor
 
 
@@ -557,7 +556,7 @@ plt.ylabel('y_train')
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_46_1.png)
+![png](pytorch_mlp_files/pytorch_mlp_46_1.png)
     
 
 
@@ -716,7 +715,7 @@ plt.plot(x_val, yhat, 'g')
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_58_1.png)
+![png](pytorch_mlp_files/pytorch_mlp_58_1.png)
     
 
 
@@ -1466,7 +1465,7 @@ plt.imshow(digits.images[0], cmap='gray')
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_122_1.png)
+![png](pytorch_mlp_files/pytorch_mlp_122_1.png)
     
 
 
@@ -2286,7 +2285,7 @@ make_dot(output, params=dict(net.named_parameters()))
 
 
     
-![svg](Pytorch_mlp%20_files/Pytorch_mlp%20_141_0.svg)
+![svg](pytorch_mlp_files/pytorch_mlp_141_0.svg)
     
 
 
@@ -2336,121 +2335,121 @@ with torch.no_grad():
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_0.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_0.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_1.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_1.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_2.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_2.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_3.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_3.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_4.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_4.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_5.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_5.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_6.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_6.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_7.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_7.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_8.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_8.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_9.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_9.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_10.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_10.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_11.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_11.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_12.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_12.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_13.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_13.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_14.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_14.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_15.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_15.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_16.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_16.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_17.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_17.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_18.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_18.png)
     
 
 
 
     
-![png](Pytorch_mlp%20_files/Pytorch_mlp%20_144_19.png)
+![png](pytorch_mlp_files/pytorch_mlp_144_19.png)
     
 
 
