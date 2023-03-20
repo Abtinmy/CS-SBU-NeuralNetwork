@@ -1,10 +1,10 @@
 ﻿---
 layout: default
-title: Assignment 1
-nav_order: 1
+title: Assignment 2
+nav_order: 2
 has_children: false
 parent: Assignments
-permalink: /assignments/Assignment 1/Assignment 1
+permalink: /assignments/Assignment 2
 ---
 
 
@@ -12,7 +12,7 @@ permalink: /assignments/Assignment 1/Assignment 1
 
 2nd Assignment - Shahid Beheshti University - Master’s Program March 20, 2023
 
-**Due date: April 7 **
+**Due date: April 7**
 
 **Exercise 1**
 
