@@ -22,7 +22,7 @@ One reason why CNNs are particularly effective at image classification tasks is 
 ## Convolution
 
 In signal processing and image analysis, convolution is a mathematical operation that combines two functions (or signals) to produce a third function that expresses how one is modified by the other. Convolution involves sliding one of the functions (known as the kernel or filter) over the other and calculating the integral of their point-wise product at each position. The resulting function is often referred to as the convolution of the two original functions.
-Convolution operation can be written as follows where convolving two functions $f$ and $g$ over a continuous domain $s$, where $g$ is reflected and shifted by $t$ before being multiplied by $f$ and integrated over $t$.
+Convolution operation can be written as follows where convolving two functions $$f$$ and $$g$$ over a continuous domain $$s$$, where $$g$$ is reflected and shifted by $$t$$ before being multiplied by $$f$$ and integrated over $$t$$.
 
 $$(f * g)(s) = \int_{-\infty}^{\infty} f(t)g(s-t)dt$$
 
