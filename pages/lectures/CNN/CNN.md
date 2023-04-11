@@ -37,18 +37,18 @@ Cross-correlation is a mathematical operation that measures the similarity betwe
 
 Cross-correlation is similar to convolution by the fact that convolution can be seen as a cross-correlation between the input signal and a time-reversed and shifted version of the kernel. This can be expressed mathematically as:
 
-$(f \star g)(s) = \int_{-\infty}^{\infty} f(t)g(t-s)dt$
+$$(f \star g)(s) = \int_{-\infty}^{\infty} f(t)g(t-s)dt$$
 
 ## CNNs
-In convolutional neural networks (CNNs), convolution layers are used to extract spatial features from input images. The convolution operation is applied to the input image using a set of learned filters (also called kernels), each of which produces a 2-dimensional activation map (or feature map) that represents a particular pattern or feature in the input. The output of a convolution layer is a set of these feature maps, which are then passed through an activation function to introduce nonlinearity. To have the better understanding, the formula of computation performed in a $L^{th}$ layer of a CNN model is written as follows. Here, $X^L_{m, n}$ represents the $(m, n)$ pixel of the output feature map of this layer. $o^{L-1}$ is the output of the previous layer and the layer has a single kernel with $f \times f$ size.  
+In convolutional neural networks (CNNs), convolution layers are used to extract spatial features from input images. The convolution operation is applied to the input image using a set of learned filters (also called kernels), each of which produces a 2-dimensional activation map (or feature map) that represents a particular pattern or feature in the input. The output of a convolution layer is a set of these feature maps, which are then passed through an activation function to introduce nonlinearity. To have the better understanding, the formula of computation performed in a $$L^{th}$$ layer of a CNN model is written as follows. Here, $$X^L_{m, n}$$ represents the $$(m, n)$$ pixel of the output feature map of this layer. $$o^{L-1}$$ is the output of the previous layer and the layer has a single kernel with $f \times f$ size.  
 
-$X^L_{m, n} = \sum_{i=0}^{f-1} \sum_{j=0}^{f-1} o_{m+i,n+j}^{L-1} \cdot w_{i,j}^L + b^L.$
+$$X^L_{m, n} = \sum_{i=0}^{f-1} \sum_{j=0}^{f-1} o_{m+i,n+j}^{L-1} \cdot w_{i,j}^L + b^L.$$
 
 ![](images/2d%20conv.png)
 
 Then activation function will element-wisely apply as following: 
 
-$o_{m, n}^L = a(x_{m, n}^L)$
+$$o_{m, n}^L = a(x_{m, n}^L)$$
 
 When dealing with input images that have multiple channels, an additional term is added to the convolution formula to account for the extra channels. During each convolution operation, values are calculated for each channel separately and then added together to produce the final output. In addition, it is possible to have multiple kernels, each of which can be used to perform a separate convolution operation. By applying multiple kernels, we can extract a variety of features from the input image.
 
@@ -56,23 +56,23 @@ When dealing with input images that have multiple channels, an additional term i
 
 ## Backpropagation in CNNs
 During the backward pass, we compute the gradient of the loss function with respect to the weights of each layer, starting from the output layer and moving backward through the network.
-Let $Y \in \mathbb{R}^{H' \times W' \times N}$ be the output of the convolutional layer, and let $L$ be the loss function. The gradient of the loss with respect to the output of the convolutional layer can be written as:
+Let $$Y \in \mathbb{R}^{H' \times W' \times N}$$ be the output of the convolutional layer, and let $$L$$ be the loss function. The gradient of the loss with respect to the output of the convolutional layer can be written as:
 
-$\frac{\partial L}{\partial Y_{i, j, k}}$
+$$\frac{\partial L}{\partial Y_{i, j, k}}$$
 
 Using the chain rule, we can compute the gradient of the loss with respect to the weights of the convolutional layer as follows.
 
-$\frac{\partial L}{\partial w_{p, q, r, k}} = \sum_{i=0}^{H-f} \sum_{j=0}^{W-f} \frac{\partial L}{\partial Y_{i, j, k}} \cdot \frac{\partial Y_{i, j, k}}{\partial w_{p, q, r, k}}$
+$$\frac{\partial L}{\partial w_{p, q, r, k}} = \sum_{i=0}^{H-f} \sum_{j=0}^{W-f} \frac{\partial L}{\partial Y_{i, j, k}} \cdot \frac{\partial Y_{i, j, k}}{\partial w_{p, q, r, k}}$$
 
 where
 
-$\frac{\partial Y_{i, j, k}}{\partial w_{p, q, r, k}} = X_{i+p-1, j+q-1, r}$
+$$\frac{\partial Y_{i, j, k}}{\partial w_{p, q, r, k}} = X_{i+p-1, j+q-1, r}$$
 
 Similarly, we can compute the gradient of the loss with respect to the input of the convolutional layer. A detailed description of this process in CNNs is described in [here](https://www.jefkine.com/general/2016/09/05/backpropagation-in-convolutional-neural-networks/). after calculating the gradient of the loss function with respect to the weights, we can update the weights using an optimization algorithm such as stochastic gradient descent (SGD) or its variants.
 
-$W_{i,j,k} = W_{i,j,k} - \alpha \frac{\partial L}{\partial W_{i,j,k}}$
+$$W_{i,j,k} = W_{i,j,k} - \alpha \frac{\partial L}{\partial W_{i,j,k}}$$
 
-where $W_{i,j,k}$ represents the weight at position $(i,j,k)$ in the kernel, $\alpha$ is the learning rate, and $\frac{\partial L}{\partial W_{i,j,k}}$ is the gradient of the loss function with respect to the weight.
+where $$W_{i,j,k}$$ represents the weight at position $$(i,j,k)$$ in the kernel, $$\alpha$$ is the learning rate, and $$\frac{\partial L}{\partial W_{i,j,k}}$$ is the gradient of the loss function with respect to the weight.
 
 
 ### Padding
@@ -82,9 +82,9 @@ Padding is the process of adding additional values (usually zeros) to the input 
 
 Same padding: In this type of padding, the output feature map size is kept the same as the input volume size. The padding is added in such a way that the convolution operation covers all the pixels of the input volume. The amount of padding to be added is calculated as:
 
-$P = \frac{F-1}{2}$
+$$P = \frac{F-1}{2}$$
 
-where $F$ is the size of the kernel.
+where $$F$$ is the size of the kernel.
 
 Valid padding: In this type of padding, the output feature map size is smaller than the input volume size. No padding is added, and the convolution operation is only applied to those pixels where the kernel completely overlaps with the input volume.
 Padding layers are often used in CNN architectures to ensure that spatial information is not lost during the convolution operation, particularly at the borders of the input volume.
@@ -98,7 +98,7 @@ To achieve this, we can increase the stride size to a value greater than 1. For 
 
 The general formula for the output size of a convolutional layer with a stride of s is given by:
 
-$\left\lfloor\frac{N-F}{s} + 1\right\rfloor$
+$$\left\lfloor\frac{N-F}{s} + 1\right\rfloor$$
 
 where N is the size of the input image, F is the size of the convolutional kernel, and s is the stride size.
 
@@ -106,7 +106,7 @@ Stride is a hyperparameter that can be tuned to control the behavior of the conv
 
 Following is a general formula of the spatial size of the output image after a convolutional layer using padding and stride.
 
-$\left\lfloor \frac{N + 2P - F}{S} + 1 \right\rfloor$
+$$\left\lfloor \frac{N + 2P - F}{S} + 1 \right\rfloor$$
 
 ![](images/stride.png)
 
