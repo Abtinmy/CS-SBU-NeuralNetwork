@@ -152,7 +152,7 @@ plt.imshow(np.transpose(im.numpy(), (1, 2, 0)));
 
 This is the same image converted to a tensor and displayed using matplotlib. Note that the torch dimensions follow [channel, height, width]<br><br>
 PyTorch automatically loads the [0,255] pixel channels to [0,1]:<br><br>
-$\frac{140}{255}=0.5490\quad\frac{153}{255}=0.6000\quad\frac{71}{255}=0.2784$
+$$\frac{140}{255}=0.5490\quad\frac{153}{255}=0.6000\quad\frac{71}{255}=0.2784$$
 
 
 ```python
@@ -356,7 +356,7 @@ Once the image has been loaded into a tensor, we can perform normalization on it
 
 ### <a href='https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Normalize'><tt>transforms.Normalize(<em>mean, std</em>)</tt></a>
 Given mean: (M1,...,Mn) and std: (S1,..,Sn) for n channels, this transform will normalize each channel of the input tensor
-### $\quad\textrm {input[channel]} = \frac{\textrm{input[channel] - mean[channel]}}{\textrm {std[channel]}}$
+### $$\quad\textrm {input[channel]} = \frac{\textrm{input[channel] - mean[channel]}}{\textrm {std[channel]}}$$
 
 
 ```python
@@ -384,7 +384,7 @@ plt.imshow(np.transpose(im.numpy(), (1, 2, 0)));
 
 Recall that before normalization, the upper-leftmost tensor had pixel values of <tt>[0.5490, 0.6000, 0.2784]</tt>.<br>
 With normalization we subtract the channel mean from the input channel, then divide by the channel std.<br><br>
-$\frac{(0.5490-0.485)}{0.229}=0.2857\quad\frac{(0.6000-0.456)}{0.224}=0.6429\quad\frac{(0.2784-0.406)}{0.225}=-0.5670$<br>
+$$\frac{(0.5490-0.485)}{0.229}=0.2857\quad\frac{(0.6000-0.456)}{0.224}=0.6429\quad\frac{(0.2784-0.406)}{0.225}=-0.5670$$<br>
 
 
 ```python
