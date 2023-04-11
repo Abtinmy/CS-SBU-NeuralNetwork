@@ -24,13 +24,13 @@ One reason why CNNs are particularly effective at image classification tasks is 
 In signal processing and image analysis, convolution is a mathematical operation that combines two functions (or signals) to produce a third function that expresses how one is modified by the other. Convolution involves sliding one of the functions (known as the kernel or filter) over the other and calculating the integral of their point-wise product at each position. The resulting function is often referred to as the convolution of the two original functions.
 Convolution operation can be written as follows where convolving two functions $f$ and $g$ over a continuous domain $s$, where $g$ is reflected and shifted by $t$ before being multiplied by $f$ and integrated over $t$.
 
-$(f * g)(s) = \int_{-\infty}^{\infty} f(t)g(s-t)dt$
+$$(f * g)(s) = \int_{-\infty}^{\infty} f(t)g(s-t)dt$$
 
 ![](images/1-d%20conv.png)
 
 In a discrete space, such as digital images, the convolution operation can be represented as a discrete summation instead of an integral. Note that the sum goes from negative infinity to positive infinity, but in practice, we can only compute the convolution for a finite range of values.
 
-$(f * g)(s) = \sum_{_-\infty}^{\infty} f(t)g(s-t)$
+$$(f * g)(s) = \sum_{_-\infty}^{\infty} f(t)g(s-t)$$
 
 #### Extra: Cross-Correlation
 Cross-correlation is a mathematical operation that measures the similarity between two signals as a function of the displacement of one relative to the other. It is often used in signal processing to detect the presence of a known pattern in a signal.
