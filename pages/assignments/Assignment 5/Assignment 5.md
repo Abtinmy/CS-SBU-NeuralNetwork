@@ -25,5 +25,5 @@ permalink: /assignments/Assignment 5
 5. Implement an autoencoder model for image colorization using [this ](https://www.kaggle.com/datasets/theblackmamba31/landscape-image-colorization)dataset. The model should take grayscale images as input and output colorized images of the same size.
 - Split the data into train and test sets.
 - Evaluate the performance of the model on the test dataset. Visualize some random images from the test set and compare the output of the model with the original colorized image.
-- Train a VAE model on this dataset. Generate multiple colorized versions of images from a set of random samples in the test set and visualize them. **(EXTRA)**
-- Empowering some of the powerful autoencoders such as U-net and trying to boost the performance. **(EXTRA)**
+- Train a VAE model on this dataset. Generate multiple colorized versions of images from a set of random samples in the test set and visualize them. **(Extra Point)**
+- Empowering some of the powerful autoencoders such as U-net and trying to boost the performance. **(Extra Point)**
