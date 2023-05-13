@@ -16,9 +16,7 @@ permalink: /assignments/Assignment 5
 1. Suppose you want to train a classifier, and you have plenty of unlabeled training data but only a few thousand labeled instances. How can autoencoders help? How would you proceed?
 1. What are undercomplete and overcomplete autoencoders? What is the main risk of an excessively undercomplete autoencoder? What about the main risk of an overcomplete autoencoder?
 1. How do you tie weights in a stacked autoencoder? What is the point of doing so?
-1. Variational auto-encoders optimize a lower bound of the data likelihood for
-
-a given input sample ( ) such that
+1. Variational auto-encoders optimize a lower bound of the data likelihood for a given input sample $x^{(i)}$ such that
 
 ![](VAE.png)
 
