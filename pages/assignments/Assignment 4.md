@@ -11,7 +11,7 @@ permalink: /assignments/Assignment 4
 
 4th Assignment - Shahid Beheshti University - Master’s Program April 25, 2023
 
-***Due date: May 12nd***
+***Due date: May 12***
 
 1. What are the main difficulties when training RNNs? How can you handle them?
 2. How can 1D convolutional layers be beneficial when used in conjunction with RNNs?
